@@ -1,0 +1,18 @@
+﻿<Strategy type="Play">
+  <Action>
+    <Bet position='1' chipSize='25' numChips='1' />
+    <Bet position='2' chipSize='0' numChips='0' />
+    <Bet position='5' chipSize='0' numChips='0' />
+    <Bet position='10' chipSize='0' numChips='0' />
+    <Bet position='20' chipSize='0' numChips='0' />
+    <Bet position='40' chipSize='0' numChips='0' />
+  </Action>
+  <Action>
+    <Bet position='1' chipSize='0' numChips='0' />
+    <Bet position='2' chipSize='0' numChips='0' />
+    <Bet position='5' chipSize='0' numChips='0' />
+    <Bet position='10' chipSize='0' numChips='0' />
+    <Bet position='20' chipSize='0' numChips='0' />
+    <Bet position='40' chipSize='25' numChips='1' />
+  </Action>
+</Strategy>

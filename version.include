@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <!-- Product Details -->
+    <ProductName>CasinoServices.Plugin.Sdk.MoneyWheel</ProductName>
+    <ProductFullName>Money Wheel type base logic</ProductFullName>
+    
+    <!-- Product Version -->
+    <Major>1</Major>
+    <Minor>0</Minor>
+    <Micro>0</Micro>
+    
+    <!-- Do not change these -->
+    <ProductCompany>Microgaming</ProductCompany>
+    <Revision>0</Revision>
+  </PropertyGroup>
+</Project>

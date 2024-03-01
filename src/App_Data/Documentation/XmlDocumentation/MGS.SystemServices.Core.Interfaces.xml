@@ -1,0 +1,760 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MGS.SystemServices.Core.Interfaces</name>
+    </assembly>
+    <members>
+        <member name="T:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum">
+            <summary>
+              The kind of software used by the user.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.ThumperClient">
+            <summary>
+              The original Win32 Casino client for Windows desktop machines.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.FlashClient">
+            <summary>
+              The Flash Casino client for desktop machines (typically Windows).
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.OpenTVClient">
+            <summary>
+              Never went live.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.ViperClient">
+            <summary>
+              The current Win32 Casino client for Windows desktop machines.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.OdinClient">
+            <summary>
+              Never went live.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.FOBTClient">
+            <summary>
+              The Win32 Casino client developed by Combination for use in Windows-based Kiosks.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MultiplayerPokerClient">
+            <summary>
+              The Win32 Multiplayer Poker client for windows desktop machines.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MultiplayerGamesClient">
+            <summary>
+              The original attempt at a multiplayer casino client. Now extinct (superceded by MPV).
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.FlashT3LiteClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MobilePhoneClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MultiplayerPokerFlashClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.CasperWebMethods">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MultiplayerPoker3DClientBitsCorp">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.FlashStandAloneGameClients">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.ExternalBuddyListClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.BackgammonStandaloneClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MultiplayerPokerInstantPlayFlashClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MobilePhoneClientWebApp">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MobilePhoneClientWidget">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.BingoFlash">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.NativeAndroid">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MobilePhoneClientNativeiPhone">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MobilePhoneClientNandroid">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.Xerox">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.FlashMiniGames">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.LaunchedFromPoker">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.OneClick">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.OrbisGame">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.FlashMiniGamesStandalone">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.FlashNanoGames">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.AndroidPoker">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MultiplayerPokeriOSNativeClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MultiplayerPokerMacDownloadClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MultiplayerPokerFastTrackFlashClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.AndroidAIRCasino">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.CenturionGame">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MobileWebGamingClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.HTML5OrbisClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.PokerMobileWeb">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MGSSportsbookDesktop">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.Zapper">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MultiplayerPokerTabbedLobbyFlashClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MGSSportsbookMobile">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MultiplayerPokerTabbedLobbyQuickFireClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.iOSAirCasino">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MacOSClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.BetstoneClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MobileDownloadWindowsClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.WindowsStoreDesktopandTablet">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MobileDownloadiOSClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.BetstoneAlchemyClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.FlashClientCasual">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.MultiplayerPokerAdjarabetFlashClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.BingoQuickfireRobotClient">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.BingoPromoFeatureGame">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.WatchCompanion">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Interfaces.Enums.ClientTypeEnum.UnknownClientType">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:MGS.SystemServices.Core.Interfaces.ISystemConfiguration">
+            <summary>
+            Interface to integration with System Configuration
+            </summary>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetSecurityUrl">
+            <summary>
+            Shortcut method to the System Security url.
+            Equivalent too GetUrl("SystemSecurity");
+            </summary>
+            <remarks>
+            [Cache] Will try and lookup url up in cache first, if it cannot be found 
+            it will query System Configuration API and populate the cache with the result.
+            </remarks>
+            <returns>The string url</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetSecurityUrlAsync">
+            <summary>
+            Shortcut method to the System Security url.
+            Equivalent too GetUrl("SystemSecurity");
+            </summary>
+            <remarks>
+            [Cache] Will try and lookup url up in cache first, if it cannot be found 
+            it will query System Configuration API and populate the cache with the result.
+            </remarks>
+            <returns>The string url</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetUrl(System.String)">
+            <summary>
+            Gets url by url type.
+            </summary>
+            <remarks>
+            [Cache] Will try and lookup url up in cache first, if it cannot be found 
+            it will query System Configuration API and populate the cache with the result.
+            </remarks>
+            <example>GetUrl("AccountAPI")</example>
+            <param name="urlType">The url type you are looking for e.g. AccountAPI</param>
+            <returns>The string url</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetUrlAsync(System.String)">
+            <summary>
+            Gets url by url type.
+            </summary>
+            <remarks>
+            [Cache] Will try and lookup url up in cache first, if it cannot be found 
+            it will query System Configuration API and populate the cache with the result.
+            </remarks>
+            <example>GetUrl("AccountAPI")</example>
+            <param name="urlType">The url type you are looking for e.g. AccountAPI</param>
+            <returns>The string url</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetUrl(System.Int32,System.String)">
+            <summary>
+            Gets url by product id and url type.
+            </summary>
+            <remarks>
+            [Cache] Will try and lookup url up in cache first, if it cannot be found 
+            it will query System Configuration API and populate the cache with the result.
+            </remarks>
+            <example>GetUrl(5001, "AccountAPI")</example>
+            <param name="productId">The specific product id</param>
+            <param name="urlType">The url type you are looking for e.g. AccountAPI</param>
+            <returns>The string url</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetUrlAsync(System.Int32,System.String)">
+            <summary>
+            Gets url by product id and url type.
+            </summary>
+            <remarks>
+            [Cache] Will try and lookup url up in cache first, if it cannot be found 
+            it will query System Configuration API and populate the cache with the result.
+            </remarks>
+            <example>GetUrl(5001, "AccountAPI")</example>
+            <param name="productId">The specific product id</param>
+            <param name="urlType">The url type you are looking for e.g. AccountAPI</param>
+            <returns>The string url</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetUrlByProductIdAsync(System.Int32,System.String)">
+            <summary>
+            Gets url by product id and url type.
+            </summary>
+            <remarks>
+            [Cache] Will try and lookup url up in cache first, if it cannot be found 
+            it will query System Configuration API and populate the cache with the result.
+            </remarks>
+            <example>GetUrl(15, "AccountAPI")</example>
+            <param name="productId">The specific product id</param>
+            <param name="urlType">The url type you are looking for e.g. AccountAPI</param>
+            <returns>The string url</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetUrlByOperatorIdAsync(System.Int32,System.String)">
+            <summary>
+            Gets url by operator id and url type.
+            </summary>
+            <remarks>
+            [Cache] Will try and lookup url up in cache first, if it cannot be found 
+            it will query System Configuration API and populate the cache with the result.
+            </remarks>
+            <example>GetUrl(15, "LoyaltyAPI")</example>
+            <param name="operatorId">The specific operator id</param>
+            <param name="urlType">The url type you are looking for e.g. LoyaltyAPI</param>
+            <returns>The string url</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetConnectionStringsForAllProductIds(System.String)">
+            <summary>
+            Gets all database connections for all products by database type
+            </summary>
+            <remarks>[Cache] Never uses the cache to get always go to the System Configuration API to fetch the FULL list.
+            It will cache the list returned so that subsequent calls which use the cache can use the fetched values.</remarks>
+            <param name="databaseType">Database type for example "Casino"</param>
+            <returns>A database connection string</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetConnectionStringsForAllProductIdsAsync(System.String)">
+            <summary>
+            Gets all database connections for all products by database type
+            </summary>
+            <remarks>[Cache] Never uses the cache to get always go to the System Configuration API to fetch the FULL list.
+            It will cache the list returned so that subsequent calls which use the cache can use the fetched values.</remarks>
+            <param name="databaseType">Database type for example "Casino"</param>
+            <returns>A database connection string</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetConnectionStringForProductId(System.Int32,System.String)">
+            <summary>
+            Gets a database connection string by it's product Id and database type
+            </summary>
+            <remarks>[Cache] Will attempt to look it up in the cache first and populate the cache if not found.</remarks>
+            <param name="productId">Product Id</param>
+            <param name="databaseType">Database type for example "Casino"</param>
+            <returns>A database connection string</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetConnectionStringForProductIdAsync(System.Int32,System.String)">
+            <summary>
+            Gets a database connection string by it's product Id and database type
+            </summary>
+            <remarks>[Cache] Will attempt to look it up in the cache first and populate the cache if not found.</remarks>
+            <param name="productId">Product Id</param>
+            <param name="databaseType">Database type for example "Casino"</param>
+            <returns>A database connection string</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetConnectionStringForOperatorIdAsync(System.Int32,System.String)">
+            <summary>
+            Gets a database connection string by it's operator Id and database type
+            </summary>
+            <remarks>[Cache] Will attempt to look it up in the cache first and populate the cache if not found.</remarks>
+            <param name="operatorId">Operator Id</param>
+            <param name="databaseType">Database type for example "Casino"</param>
+            <returns>A database connection string</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetConnectionStringForRouterId(System.Int32,System.String)">
+            <summary>
+            Gets a database connection string by it's router Id and database type
+            </summary>
+            <remarks>[Cache] Will attempt to look it up in the cache first and populate the cache if not found.</remarks>
+            <param name="routerId">Router Id</param>
+            <param name="databaseType">Database type for example "Casino"</param>
+            <returns>A database connection string</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetConnectionStringForRouterIdAsync(System.Int32,System.String)">
+            <summary>
+            Gets a database connection string by it's router Id and database type
+            </summary>
+            <remarks>[Cache] Will attempt to look it up in the cache first and populate the cache if not found.</remarks>
+            <param name="routerId">Router Id</param>
+            <param name="databaseType">Database type for example "Casino"</param>
+            <returns>A database connection string</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetConnectionString(System.String)">
+            <summary>
+            Gets a database connection string by it's database type.
+            </summary>
+            <remarks>[Cache] Will attempt to look it up in the cache first and populate the cache if not found.</remarks>
+            <param name="databaseType">Database type for example "Casino"</param>
+            <returns>A database connection string</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetConnectionStringAsync(System.String)">
+            <summary>
+            Gets a database connection string by it's database type.
+            </summary>
+            <remarks>[Cache] Will attempt to look it up in the cache first and populate the cache if not found.</remarks>
+            <param name="databaseType">Database type for example "Casino"</param>
+            <returns>A database connection string</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetProducts">
+            <summary>
+            Gets and caches all products
+            </summary>
+            <remarks>[Cache] Will always fetch from the System Configuration API but will populate the cache with results.</remarks>
+            <returns>A list of products</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetProducts(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Gets and caches all products filtered by a list of product Ids
+            </summary>
+            <remarks>[Cache] Will always fetch from the System Configuration API but will populate the cache with results.</remarks>
+            <returns>A list of products</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetProductsAsync">
+            <summary>
+            Gets and caches all products
+            </summary>
+            <remarks>[Cache] Will always fetch from the System Configuration API but will populate the cache with results.</remarks>
+            <returns>A list of products</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetProductsAsync(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Gets and caches all products filtered by a list of product Ids
+            </summary>
+            <remarks>[Cache] Will always fetch from the System Configuration API but will populate the cache with results.</remarks>
+            <returns>A list of products</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetProducts(System.Int32)">
+            <summary>
+            Gets products for the specified operator.
+            </summary>
+            <remarks>[Cache] Does not use cache.</remarks>
+            <returns>A list of products</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetProductsAsync(System.Int32)">
+            <summary>
+            Gets products for the specified operator.
+            </summary>
+            <remarks>[Cache] Does not use cache.</remarks>
+            <returns>A list of products</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetProduct(System.Int32)">
+            <summary>
+            Gets a product by it's product.
+            </summary>
+            <remarks>[Cache] Fetches all products from System Configuration API if product is not found and populates cache.</remarks>
+            <param name="productId">Product Id</param>
+            <returns>A single product, either from cache or by fetching all from the api</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetProductAsync(System.Int32)">
+            <summary>
+            Gets a product by it's product.
+            </summary>
+            <remarks>[Cache] Fetches all products from System Configuration API if product is not found and populates cache.</remarks>
+            <param name="productId">Product Id</param>
+            <returns>A single product, either from cache or by fetching all from the api</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetProducts(System.Boolean)">
+            <summary>
+            Gets products for the specified operator.
+            </summary>
+            <remarks>[Cache] Does not use cache.</remarks>
+            <param name="currentHostingLocationOnly">True filters results for the current hosting location</param>
+            <returns>A list of products</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetProductsAsync(System.Boolean)">
+            <summary>
+            Gets products for the specified operator.
+            </summary>
+            <remarks>[Cache] Does not use cache.</remarks>
+            <param name="currentHostingLocationOnly">True filters results for the current hosting location</param>
+            <returns>A list of products</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetProducts(System.Collections.Generic.IEnumerable{System.Int32},System.Boolean)">
+            <summary>
+            Gets products for the specified operator.
+            </summary>
+            <remarks>[Cache] Does not use cache.</remarks>
+            <param name="productIds">list of product ids used to filter</param>
+            <param name="currentHostingLocationOnly">True filters results for the current hosting location</param>
+            <returns>A list of products</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetProductsAsync(System.Collections.Generic.IEnumerable{System.Int32},System.Boolean)">
+            <summary>
+            Gets products for the specified operator.
+            </summary>
+            <remarks>[Cache] Does not use cache.</remarks>
+            <param name="productIds">list of product ids used to filter</param>
+            <param name="currentHostingLocationOnly">True filters results for the current hosting location</param>
+            <returns>A list of products</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetOperators">
+            <summary>
+            Gets and caches all operators
+            </summary>
+            <remarks>[Cache] Will always fetch from the System Configuration API but will populate the cache with results.</remarks>
+            <returns>A list of operators</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetOperatorsAsync">
+            <summary>
+            Gets and caches all operators
+            </summary>
+            <remarks>[Cache] Will always fetch from the System Configuration API but will populate the cache with results.</remarks>
+            <returns>A list of operators</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetOperatorsAsync(System.Boolean)">
+            <summary>
+            Gets and caches all operators, and potentially all their products.
+            </summary>
+            <remarks>[Cache] Will always fetch from the System Configuration API but will populate the cache with results.</remarks>
+            <param name="includeProducts">Flag to set whether or not we want all the operators products in the response.</param>
+            <returns>A list of operators and their products if the includeProducts flag is set.</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetOperator(System.Int32)">
+            <summary>
+            Gets a operator by it's operator Id.
+            </summary>
+            <remarks>[Cache] Fetches all operators from System Configuration API if operator is not found and populates cache.</remarks>
+            <param name="operatorId">Operator Id</param>
+            <returns>A single operator, either from cache or by fetching all from the api</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetOperatorAsync(System.Int32)">
+            <summary>
+            Gets a operator by it's Operator Id.
+            </summary>
+            <remarks>[Cache] Fetches all operators from System Configuration API if operator is not found and populates cache.</remarks>
+            <param name="operatorId">Operator Id</param>
+            <returns>A single operator, either from cache or by fetching all from the api</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetApplications">
+            <summary>
+            Gets applications.
+            </summary>
+            <remarks>[Cache] Will always fetch from the System Configuration API but will populate the cache with results.</remarks>
+            <returns>A list of application</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetApplicationsAsync">
+            <summary>
+            Gets applications.
+            </summary>
+            <remarks>[Cache] Will always fetch from the System Configuration API but will populate the cache with results.</remarks>
+            <returns>A list of application</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetApplication(System.Int32)">
+            <summary>
+            Gets a application by it's unique identifier.
+            </summary>
+            <remarks>[Cache] Will attempt to look it up in the cache first, if it's not found it will goto System Configuration API fetch it and populate the cache.</remarks>
+            <param name="applicationId">Application unique identifier</param>
+            <returns>A single application, either from cache or by fetching all from the api</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetApplicationAsync(System.Int32)">
+            <summary>
+            Gets a application by it's unique identifier.
+            </summary>
+            <remarks>[Cache] Will attempt to look it up in the cache first, if it's not found it will goto System Configuration API fetch it and populate the cache.</remarks>
+            <param name="applicationId">Application unique identifier</param>
+            <returns>A single application, either from cache or by fetching all from the api</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetApplication(System.String)">
+            <summary>
+            Gets a application by it's name.
+            </summary>
+            <remarks>[Cache] Will attempt to look it up in the cache first, if it's not found it will goto System Configuration API fetch it and populate the cache.</remarks>
+            <param name="applicationName">Application name</param>
+            <returns>A single application, either from cache or by fetching all from the api</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetApplicationAsync(System.String)">
+            <summary>
+            Gets a application by it's name.
+            </summary>
+            <remarks>[Cache] Will attempt to look it up in the cache first, if it's not found it will goto System Configuration API fetch it and populate the cache.</remarks>
+            <param name="applicationName">Application name</param>
+            <returns>A single application, either from cache or by fetching all from the api</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetGamingServers">
+            <summary>
+            Gets and caches all gaming servers
+            </summary>
+            <remarks>[Cache] Will always fetch from the System Configuration API but will populate the cache with results.</remarks>
+            <returns>A list of gaming servers</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetGamingServersAsync">
+            <summary>
+            Gets all gaming servers
+            </summary>
+            <remarks>[Cache] Will always fetch from the System Configuration API and will NOT cache the results.</remarks>
+            <returns>A list of gaming servers</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetGamingServerByRouterId(System.Int32)">
+            <summary>
+            Gets and caches the gaming server for a specific router
+            </summary>
+            <remarks>[Cache] Will attempt to look it up in the cache first, if it's not found it will goto System Configuration API fetch it and populate the cache.</remarks>
+            <returns>The gaming server associated with router</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetGamingServerByRouterIdAsync(System.Int32)">
+            <summary>
+            Gets and caches the gaming server for a specific router
+            </summary>
+            <remarks>[Cache] Will attempt to look it up in the cache first, if it's not found it will goto System Configuration API fetch it and populate the cache.</remarks>
+            <returns>The gaming server associated with router</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetConnectionStringForSystemGroup(System.String,System.String)">
+            <summary>
+            Gets a database connection string by it's logical system group name and database type
+            </summary>
+            <remarks>[Cache] Will attempt to look it up in the cache first and populate the cache if not found.</remarks>
+            <param name="systemGroup">Logical name for a group of systems</param>
+            <param name="databaseType">Database type for example "Casino"</param>
+            <returns>A database connection string</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Interfaces.ISystemConfiguration.GetConnectionStringForSystemGroupAsync(System.String,System.String)">
+            <summary>
+            Gets a database connection string by it's logical system group name and database type
+            </summary>
+            <remarks>[Cache] Will attempt to look it up in the cache first and populate the cache if not found.</remarks>
+            <param name="systemGroup">Logical name for a group of systems</param>
+            <param name="databaseType">Database type for example "Casino"</param>
+            <returns>A database connection string</returns>
+        </member>
+        <member name="T:MGS.SystemServices.Core.Interfaces.ISystemSecurity">
+            <summary>
+            Interface to integration with System Security
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Interfaces.ISystemSecurity.ServiceToken">
+            <summary>
+            Gets the Service Token
+            </summary>
+            <value>Raw JWT Service Token</value>
+            <remarks>JWT will still be base64 url encoded</remarks>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Interfaces.ISystemSecurity.HasToken">
+            <summary>
+            Gets whether there is a Service Token
+            </summary>
+        </member>
+        <member name="T:MGS.SystemServices.Core.Interfaces.Models.ClientType">
+            <summary>
+            The client software, identified as the client type.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Interfaces.Models.ClientType.ClientTypeId">
+            <summary>
+            The unique identifier for the software
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Interfaces.Models.ClientType.ClientTypeName">
+            <summary>
+            A human friendly name for the software.
+            </summary>
+        </member>
+        <member name="T:MGS.SystemServices.Core.Interfaces.Models.Operator">
+            <summary>
+            Operator
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Interfaces.Models.Operator.OperatorId">
+            <summary>
+              The ID of the operator, if operator details exist in the current context.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Interfaces.Models.Operator.OperatorName">
+            <summary>
+              The name of the operator, if operator details exist in the current context.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Interfaces.Models.Operator.Products">
+            <summary>
+            THe list of products. Will only be populated it request.
+            </summary>
+        </member>
+        <member name="T:MGS.SystemServices.Core.Interfaces.Models.Product">
+            <summary>
+            Product
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Interfaces.Models.Product.ProductId">
+            <summary>
+            The ProductID.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Interfaces.Models.Product.ProductGroupId">
+            <summary>
+             The ID that identifies the product group.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Interfaces.Models.Product.OwnerOperatorId">
+            <summary>
+              The ID that identifies the operator that owns the product.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Interfaces.Models.Product.Name">
+            <summary>
+            The name of the Product.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Interfaces.Models.Product.ProductServerId">
+            <summary>
+            The ProductServerID of the Product Server on which the Product is hosted.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Interfaces.Models.Product.ProductServerName">
+            <summary>
+            The name of the Product Server on which the Product is hosted.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Interfaces.Models.Product.AccountEnabled">
+            <summary>
+            Whether or not the product is enabled to support the account system.
+            </summary>
+        </member>
+        <member name="T:MGS.SystemServices.Core.Interfaces.Models.ServiceToken">
+            <summary>
+            Wrapper of the Service Token
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Interfaces.Models.ServiceToken.AccessToken">
+            <summary>
+            Raw encoded token
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Interfaces.Models.ServiceToken.ExpiryInSeconds">
+            <summary>
+            Expiry time in seconds
+            </summary>
+        </member>
+    </members>
+</doc>

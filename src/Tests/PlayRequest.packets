@@ -1,0 +1,13 @@
+<Packets>
+  <Packet>
+    <Pkt version="6">
+      <Id verb="Play" />
+      <Request>
+        <Bets>
+          <Bet position="1" chipSize="25" numChips="1"/>
+          <Bet position="2" chipSize="25" numChips="2"/>
+        </Bets>
+      </Request>
+    </Pkt>
+  </Packet>
+</Packets>

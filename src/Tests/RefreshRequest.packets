@@ -1,0 +1,8 @@
+﻿<Packets>
+  <Packet>
+    <Pkt version="6">
+      <Id verb="Refresh" />
+      <Request />
+    </Pkt>
+  </Packet>
+</Packets>

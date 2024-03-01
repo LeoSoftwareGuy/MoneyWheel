@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Default" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <!--
+      =====================================================================    
+        Derivco Build System (Part of the Derivco Software Pipeline)
+        - More info: http://fw.minion/dvopdsp
+      =====================================================================
+        This file is used to define how your build functions.
+        - Comment and uncomment the lines to enable or disable features.
+      =====================================================================
+        Something is broken or you need some help?          
+        - Build System: http://fw.minion/cfgbuildp
+        - Version Control: http://fw.minion/cfgvc
+      =====================================================================
+    -->
+  
+  <Import Project="config\Build.Process.targets"/>
+  <!-- <Import Project="config\CCNet.include"/> -->
+  <Import Project="config\TeamCityUniversal.props"/>
+  <Import Project="config\Directory.Default.include"/>
+  <Import Project="config\Base.Version.targets"/>
+  <Import Project="config\BuildSettings.Version.Targets"/>
+  <Import Project="config\CS.CommonAssembly.Version.Targets"/>
+  <!-- <Import Project="config\NetStd.Version.Targets"/> -->
+  <Import Project="config\DTProj.Version.Targets"/>
+  <Import Project="config\Nuspec.Version.Targets"/>
+  <!-- <Import Project="config\CPP.CommonAssembly.Version.Targets"/>
+  <Import Project="config\CPP.Resource.Version.Targets"/>
+  <Import Project="config\CPP.VSProps.Version.Targets"/>
+  <Import Project="config\CPP.Props.Version.Targets"/>
+  <Import Project="config\Extension.Props.Version.Targets"/> 
+  <Import Project="config\Subversion.Version.targets"/> -->
+  <!-- <Import Project="config\Date.Version.targets"/> -->
+  <Import Project="config\Standard.Build.targets"/>
+  <Import Project="config\NodeJS.Build.targets"/>
+  <!-- <Import Project="config\Standard.CodeAnalysis.targets"/> -->
+  <!-- <Import Project="config\Annotate.Symbols.targets"/>
+  <Import Project="config\Store.Symbols.targets"/> -->
+  <!-- <Import Project="config\NCover.Test.targets"/> -->
+  <!-- <Import Project="config\NUnit.Test.targets"/> -->
+  <!-- <Import Project="config\NUnit3.Test.targets"/> -->
+  <!-- <Import Project="config\MPV.FlashClient.Flex.Test.targets"/> -->
+  <!-- <Import Project="config\GTest.VSProfiler.Test.Targets" /> -->
+  <Import Project="config\VS.Test.targets"/>
+  <Import Project="config\Coverage.Report.targets"/>
+  <!-- <Import Project="config\Standard.Package.targets"/> -->
+  <!-- <Import Project="config\Multi.Package.targets"/> -->
+  <Import Project="config\FlavorPrefix.Package.targets"/>
+  <!-- <Import Project="config\FlavorSuffix.Package.targets"/> -->
+  <!-- <Import Project="config\Maven.Build.targets"/> -->
+  <Import Project="config\VersionOnly.Package.targets"/>
+  <!-- <Import Project="config\PerConfiguration.Package.targets"/> -->
+  <Import Project="config\BuildVersion.Package.targets"/>
+  <Import Project="config\Nupkg.Generator.Targets"/>
+  <!-- <Import Project="config\Powershell.Deployment.Functions.Targets"/> -->  
+  <!-- <Import Project="config\Servicefabric.Version.Targets"/>
+  <Import Project="config\ServiceFabric.Package.targets"/> 
+  <Import Project="config\WebAPI.Selfhosted.Documentation.Targets"/>
+  <Import Project="config\WebAPI.Selfhosted.Signing.Targets"/> -->
+  
+</Project>

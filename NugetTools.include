@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SmartToolsInstaller
+    Used to tell the bootstrap whether it should try work out what tools are required instead of installing them all.
+    Set this to false to install all tools
+    
+  OverrideNugetToolsInstall
+    Used to stop the bootstrap from installing the tools so that you can add them here or specify a specific version
+    This stops all tools from being installed by the bootstrap
+  
+  Tool Items
+    [REQUIRED] Id: The ID of the nuget package
+    Version: A specific version to install
+    Source: Where to get the nuget package from, if not specified, it will use what is listed on the system
+    InstallDir: Directory to install the package (Base dir is root dir )
+    CustomDirName: Directory to install the package in instead of using {ID}.{Version} by default
+    ExcludeVersion: Exclude version info in the folder name (true/false)
+    ExtraCommandParameters: Extra parameters to add to the nuget install command
+    Comment: A neat comment to self about what/why the block installs something, also displayed in the log
+  
+  Example Tool Install node
+    <NugetTool>
+      <Id>7Zip</Id>
+      <Version>4.66</Version>
+      <Source>http://nugetlib/</Source>
+      <InstallDir>tools</InstallDir>
+      <ExcludeVersion>true</ExcludeVersion>
+      <Comment>This installs a specific 7ZIP version from a specific source to a specific directory without version info</Comment>
+    </NugetTool>
+    <NugetTool>
+      <Id>7Zip</Id>
+      <InstallDir>tools</InstallDir>
+      <ExcludeVersion>true</ExcludeVersion>
+      <Comment>Install the latest 7ZIP version into tools</Comment>
+    </NugetTool>
+-->
+<NugetTools 
+    SmartToolsInstaller="true" 
+    OverrideNugetToolsInstall="false">
+</NugetTools>

@@ -1,0 +1,62 @@
+<!--defaultWheelIndex can be set either to "random" or to number from "0" to "53" except "13" and "41" (multipliers).-->
+
+<XML>
+  <VersionInfo version="1.0.0.0"/>
+  <ServiceInfo moduleId="160" gameName="FortuneFinder" />
+  <Wheel defaultWheelIndex="random">
+    <Position index="0" symbol="40" payout="41" resultingMultiplier="1" />
+    <Position index="1" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="2" symbol="10" payout="11" resultingMultiplier="1" />
+    <Position index="3" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="4" symbol="2" payout="3" resultingMultiplier="1" />
+    <Position index="5" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="6" symbol="5" payout="6" resultingMultiplier="1" />
+    <Position index="7" symbol="2" payout="3" resultingMultiplier="1" />
+    <Position index="8" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="9" symbol="20" payout="21" resultingMultiplier="1" />
+    <Position index="10" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="11" symbol="2" payout="3" resultingMultiplier="1" />
+    <Position index="12" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="13" symbol="x7" payout="0" resultingMultiplier="7" />
+    <Position index="14" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="15" symbol="2" payout="3" resultingMultiplier="1" />
+    <Position index="16" symbol="10" payout="11" resultingMultiplier="1" />
+    <Position index="17" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="18" symbol="2" payout="3" resultingMultiplier="1" />
+    <Position index="19" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="20" symbol="5" payout="6" resultingMultiplier="1" />
+    <Position index="21" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="22" symbol="2" payout="3" resultingMultiplier="1" />
+    <Position index="23" symbol="5" payout="6" resultingMultiplier="1" />
+    <Position index="24" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="25" symbol="2" payout="3" resultingMultiplier="1" />
+    <Position index="26" symbol="5" payout="6" resultingMultiplier="1" />
+    <Position index="27" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="28" symbol="2" payout="3" resultingMultiplier="1" />
+    <Position index="29" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="30" symbol="10" payout="11" resultingMultiplier="1" />
+    <Position index="31" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="32" symbol="2" payout="3" resultingMultiplier="1" />
+    <Position index="33" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="34" symbol="2" payout="3" resultingMultiplier="1" />
+    <Position index="35" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="36" symbol="20" payout="21" resultingMultiplier="1" />
+    <Position index="37" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="38" symbol="2" payout="3" resultingMultiplier="1" />
+    <Position index="39" symbol="5" payout="6" resultingMultiplier="1" />
+    <Position index="40" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="41" symbol="x2" payout="0" resultingMultiplier="2" />
+    <Position index="42" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="43" symbol="10" payout="11" resultingMultiplier="1" />
+    <Position index="44" symbol="2" payout="3" resultingMultiplier="1" />
+    <Position index="45" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="46" symbol="5" payout="6" resultingMultiplier="1" />
+    <Position index="47" symbol="2" payout="3" resultingMultiplier="1" />
+    <Position index="48" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="49" symbol="2" payout="3" resultingMultiplier="1" />
+    <Position index="50" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="51" symbol="2" payout="3" resultingMultiplier="1" />
+    <Position index="52" symbol="1" payout="2" resultingMultiplier="1" />
+    <Position index="53" symbol="5" payout="6" resultingMultiplier="1" />
+  </Wheel>
+</XML>

@@ -1,0 +1,5 @@
+﻿<Strategy type="Simple">
+  <Action>
+    <Bet position='2' chipSize='25' numChips='1' />
+  </Action>
+</Strategy>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>CasinoServices.Plugin.Sdk.MoneyWheel</id>
+    <version>1.0.0.0</version>
+    <authors>DerivcoEstoniaCasinoServices@derivco.ee</authors>
+    <description>Money Wheel type game base logic</description>
+    <copyright>Copyright © Microgaming 1996-2020 All rights reserved</copyright>
+    <tags>Sdk;GameCore;MoneyWheel</tags>
+  </metadata>
+    <files>
+    <!-- This runs in the context of the builds folder -->
+    <!-- !!Please keep these in alphabetical order!! -->
+    <file src="CasinoServices.Plugin.Sdk.MoneyWheel\CasinoServices.Plugin.Sdk.MoneyWheel.dll" />
+  </files>
+</package>

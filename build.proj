@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Default" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    =====================================================================    
+      Derivco Build System (Part of the Derivco Software Pipeline)
+      - More info: http://fw.minion/dvopdsp
+    =====================================================================
+      This file is used to define what your build builds/versions.
+      - There is commented references to help you get started.
+    =====================================================================
+      Something is broken or you need some help?          
+      - Build System: http://fw.minion/cfgbuildp
+      - Version Control: http://fw.minion/cfgvc
+    =====================================================================
+  -->
+  <!-- Directory Properties -->
+  <PropertyGroup>
+    <WorkingDir>$(MSBuildProjectDirectory)\</WorkingDir>
+    <BuildDir>$(MSBuildProjectDirectory)\build\</BuildDir>
+    <DistDir Condition="'$(DistDir)' == ''">$(WorkingDir)dist\</DistDir>
+  </PropertyGroup>
+  
+  <!-- Versioning Properties -->
+  <Import Project="version.include" />
+  
+  <ItemGroup>
+    <!-- Versioning -->
+    <VersionedItem Include="src\CommonAssemblyInfo.cs" />
+    <VersionedItem Include="deploy\**\*.nuspec" Exclude="deploy\**\*.Config.nuspec" />
+    <VersionedItem Include="src\**\*.dtproj" />
+    
+    <!-- Versioning examples -->
+      <!-- Service Fabric Versioning 
+        <VersionedItem Include="src\ServiceFabricProjectDirectory\ApplicationPackageRoot\ApplicationManifest.xml" /> 
+      -->
+    <!-- Versioning -->
+
+    <!-- Building (Projects to build in order) -->
+    <Project Include="src\MoneyWheel.sln"/>
+    
+    <!-- Project examples -->
+      <!-- .NET Solution        
+        <Project Include="src\Template.sln"/>
+      -->
+      <!-- NPM Project
+        <Project Include="src\ProjectDirectory\" />
+       - - OR (for gulp build)
+        <Project Include="src\ProjectDirectory\">
+          <NPMCommandToRun>gulp</NPMCommandToRun>
+        </Project>
+       - - OR (for gulp build my-gulp-task)
+        <Project Include="src\ProjectDirectory\">
+          <NPMCommandToRun>gulp</NPMCommandToRun>
+          <NPMBuildTask>my-gulp-task</NPMBuildTask>
+        </Project>
+       - - OR (for npm test instead of Karma)
+        <Project Include="src\ProjectDirectory\">
+          <Karma>false</Karma>
+          <NPMTestTask>test</NPMTestTask>
+        </Project>
+      -->    
+      <!-- SQL Project Under .NET Solution (*.dtproj) (You must change the .NET solution reference above to the solution reference below)
+        <Project Include="src\Template.sln" >
+          <DTProj>Yes</DTProj>
+          <VSVersion>14.0</VSVersion>
+        </Project> 
+      -->
+      <!-- Service Fabric Package (Uncomment "<Import Project="config\ServiceFabric.Package.targets"/>" in the Build.Targets file)
+        <ServiceFabricPackageProjects Include="src\ServiceFabricProjectDirectory\Template.sfproj"/>
+      -->
+    <!-- Building -->
+  </ItemGroup>
+  
+  <Import Project="Build.targets"/>
+</Project>

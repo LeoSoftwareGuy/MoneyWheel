@@ -1,0 +1,15 @@
+<!--
+  .veyrongame files are explained in section 3.4 of the Veyron SDK Developer Guide.
+-->
+<VeyronGame>
+  <VeyronPlugin name="..\bin\debug\CasinoServices.Plugin.Sdk.MoneyWheel.dll" />
+   <AdditionalGameFiles>
+    <File name="MoneyWheel.xml" />
+  </AdditionalGameFiles>
+  <AdditionalPluginFiles>
+    <!--
+    <File name="MoneyWheelExample1.dll" />
+    <File name="MoneyWheelExample1.dll" />
+    -->
+  </AdditionalPluginFiles>
+</VeyronGame>

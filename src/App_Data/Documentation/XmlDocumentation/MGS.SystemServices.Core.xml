@@ -1,0 +1,427 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MGS.SystemServices.Core</name>
+    </assembly>
+    <members>
+        <member name="T:MGS.SystemServices.Core.Diagnostics.DiagnosticCodeClassification">
+            <summary>
+              Provides some helper methods for classification of diagnostic codes.
+            </summary>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Diagnostics.DiagnosticCodeClassification.#ctor">
+            <summary>
+              Initialises an instance of DiagnosticCodeClassification.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Diagnostics.DiagnosticCodeClassification.CriticalDiagnosticCodes">
+            <summary>
+              Returns the set of critical diagnostic codes.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Diagnostics.DiagnosticCodeClassification.SeriousDiagnosticCodes">
+            <summary>
+              Returns the set of serious diagnostic codes.
+            </summary>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Diagnostics.DiagnosticCodeClassification.AddCriticalDiagnosticCode(System.Enum)">
+            <summary>
+              Adds a single critical diagnostic code.
+            </summary>
+            <param name="code">The code to add.</param>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Diagnostics.DiagnosticCodeClassification.AddCriticalDiagnosticCodes(System.Collections.Generic.IEnumerable{System.Enum})">
+            <summary>
+              Adds a collection of critical diagnostic codes.
+            </summary>
+            <param name="codes">The codes to add.</param>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Diagnostics.DiagnosticCodeClassification.AddSeriousDiagnosticCode(System.Enum)">
+            <summary>
+              Adds a single serious diagnostic code.
+            </summary>
+            <param name="code">The code to add.</param>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Diagnostics.DiagnosticCodeClassification.AddSeriousDiagnosticCodes(System.Collections.Generic.IEnumerable{System.Enum})">
+            <summary>
+              Adds a collection of serious diagnostic codes.
+            </summary>
+            <param name="codes">The codes to add.</param>
+        </member>
+        <member name="T:MGS.SystemServices.Core.Diagnostics.Codes">
+            <summary>
+              Canonical list of Diagnostic Codes emitted from the MGS.SystemServices.Core library.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Diagnostics.Codes.NullOrEmptyUrl">
+            <summary>
+            A url returned by System Configuration is null or empty. This means that System Configuration has a url but is has been created with a null or empty value.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Diagnostics.Codes.ExistingApiKeyFound">
+            <summary>
+            The API Key was found locally on disk in the API Key file. It is intended predominantly for debugging purposes and only logged when in Verbose mode.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Diagnostics.Codes.MaxRetriesToGetServiceToken">
+            <summary>
+            The maximum number of retries to try and fetch a service token was exceeded. This would likely happen if the API Key has is still pending in the System Security webpage and has not yet been approved or declined.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Diagnostics.Codes.ApiKeyPending">
+            <summary>
+            The API/application has registered with System Security but the API Key is still pending. This means that the API Key still needs to be approved or declined on the System Security webpage.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Diagnostics.Codes.ApiKeyDeclined">
+            <summary>
+            API Key was declined through the System Security webpage. If this was done in error try deleting the API Key file and re-registering the API or application.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Diagnostics.Codes.ApiKeyNotFound">
+            <summary>
+            A local API Key was found in the API Key file on disk, however System Security was not able to find it. Try deleting the API Key file and re-registering the API or application.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Diagnostics.Codes.FailedToGetServiceToken">
+            <summary>
+            An unexpected error occurred trying to get a Service Token. The details of the exact error should be in the log file.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Diagnostics.Codes.ServiceTokenRefreshed">
+            <summary>
+            A Service Token is successfully refreshed.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Diagnostics.Codes.BeginServiceTokenRefreshingSchedule">
+            <summary>
+            Background token refreshing of Service Tokens has begun.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Diagnostics.Codes.EndServiceTokenRefreshingSchedule">
+            <summary>
+            Background token refreshing of Service Tokens has ended. Occurs if either the task responsible is cancelled or the API/application is shutting down.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Diagnostics.Codes.FailedToRefreshServiceToken">
+            <summary>
+            An unexpected error occurred trying to refresh a Service Token as part of the background refreshing schedule. This will cause the schedule to go into a "Token Under Threat" mode where it will try repeatedly to get a Service Token as the the token is likely to expire soon.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Diagnostics.Codes.MarkingServiceTokenAsUnderThreat">
+            <summary>
+            Marks when a Service Token is "Under Threat". This occurs when the token is 80% of the way to expiry but there was a problem refreshing the token.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Diagnostics.Codes.UnableToLogMetric">
+            <summary>
+            An exception occurred attempting to log a metric. We swallow the error but the details should be in the log file.
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Diagnostics.Codes.SystemConfigurationAPIError">
+            <summary>
+            An error occurred communicating with System Configuration. There may be a problem with the System Configuration API or some network related problem preventing connectivity. The log file should contain the full details of the error.
+            </summary>
+        </member>
+        <member name="T:MGS.SystemServices.Core.Diagnostics.CodeDescriptions">
+            <summary>
+              Provides detailed descriptions for diagnostic codes.
+            </summary>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Diagnostics.CodeDescriptions.Get(System.Enum)">
+            <summary>
+              Get a description for the supplied diagnostic code.
+            </summary>
+            <param name="code">The diagnostic code to describe.</param>
+            <returns>A string containing details about the diagnostic code, or null if the code is not found.</returns>
+        </member>
+        <member name="T:MGS.SystemServices.Core.Diagnostics.CodeClassification">
+            <summary>
+              Classifies diagnostic codes.
+            </summary>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Diagnostics.CodeClassification.GetCriticalDiagnosticCodes">
+            <summary>
+              Returns a collection of critical diagnostic codes.
+            </summary>
+            <returns>The collection containing critical diagnostic codes.</returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Diagnostics.CodeClassification.GetSeriousDiagnosticCodes">
+            <summary>
+              Returns a collection of serious diagnostic codes.
+            </summary>
+            <returns>The collection containing serious diagnostic codes.</returns>
+        </member>
+        <member name="T:MGS.SystemServices.Core.Diagnostics.ErrorMessages">
+            <summary>
+            Common error messages
+            </summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Diagnostics.ErrorMessages.SystemConfigurationUnauthorized">
+            <summary></summary>
+        </member>
+        <member name="F:MGS.SystemServices.Core.Diagnostics.ErrorMessages.NoTokenProvided">
+            <summary></summary>
+        </member>
+        <member name="T:MGS.SystemServices.Core.Diagnostics.StandardCounter">
+            <summary>
+              A counter which logs an Action to the metrics system under a particular Category, with optional information around a releated Operator and Product.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Diagnostics.StandardCounter.Category">
+            <summary>
+              The Category for the counter, e.g. "WebMethod"
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Diagnostics.StandardCounter.Action">
+            <summary>
+              The Action for the counter, e.g. "Login"
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Diagnostics.StandardCounter.Product">
+            <summary>
+              The Product information associated with the counter, if any.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Diagnostics.StandardCounter.Operator">
+            <summary>
+              The Operator information associated with the counter, if any.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Diagnostics.StandardCounter.IncludeProductDetails">
+            <summary>
+              Should missing Product details be included as "Unknown" or should they simply be suppressed.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Diagnostics.StandardCounter.IncludeOperatorDetails">
+            <summary>
+              Should missing Operator details be included as "Unknown" or should they simply be suppressed.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Diagnostics.StandardCounter.IncludeCallerDetails">
+            <summary>
+              Should missing Caller details be included as "Unknown" or should they simply be suppressed.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Diagnostics.StandardCounter.IncludeClientTypeDetails">
+            <summary>
+              Should missing ClientType details be included as 0 or should they simply be suppressed.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Diagnostics.StandardCounter.Caller">
+            <summary>
+              A string identifying the caller of the application logging the metric.
+            </summary>
+            <remarks>This can be useful for quantifying which applications make use of which API methods, which clients call a particular service the most, etc.</remarks>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Diagnostics.StandardCounter.ClientType">
+            <summary>
+            A ClientType information associated with the counter, if any. 
+            This is prodominantly a casino feature for identifying the difference between Viper, Flash, H5, Android, iOS, etc.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.Diagnostics.StandardCounter.FailureDetail">
+            <summary>
+              Failure detail which, if available, will be post-pended to the logged metric if it is logged as an error.
+            </summary>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Diagnostics.StandardCounter.#ctor">
+            <summary>
+              Creates a StandardCounter.
+            </summary>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Diagnostics.StandardCounter.LogTiming(System.Int64)">
+            <summary>
+              Logs the timing information for the counter.
+            </summary>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Diagnostics.StandardCounter.IncCount">
+            <summary>
+              Increases the Success count for the counter.
+            </summary>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Diagnostics.StandardCounter.IncErrors">
+            <summary>
+              Increases the Failure count for the counter.
+            </summary>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Diagnostics.StandardCounter.GetFullyQualifiedName(System.String)">
+            <summary>
+              Returns the fully qualified name for the counter, given the specified suffix.
+            </summary>
+            <param name="suffix"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MGS.SystemServices.Core.SystemConfiguration">
+            <summary>
+            Implementation of the <see cref="T:MGS.SystemServices.Core.Interfaces.ISystemConfiguration"/>. 
+            Makes use of the client libraries to call the System Configuration API and provides in memory caching.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.SystemConfiguration.Security">
+            <summary>
+            The instance of System Security integration used to manage the token being sent to System Configuration.
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.SystemConfiguration.SystemConfigurationClient">
+            <summary>
+            The underlying client. Exposed for scenarios where potentially the core does not provide something.
+            </summary>
+        </member>
+        <member name="M:MGS.SystemServices.Core.SystemConfiguration.#ctor(System.String,System.String)">
+            <summary>
+            Creates instance of System Configuration integration 
+            </summary>
+            <param name="systemConfigurationServiceUrl">The base url of the System Configuration API endpoint (Bluemesa example: http://webserver4/systemconfiguration/)</param>
+            <param name="systemConfigurationApplicationName">This will be the application name used in requests that require application filtering</param>
+        </member>
+        <member name="T:MGS.SystemServices.Core.SystemSecurity">
+            <summary>
+            Provides an abstraction of the System Security api and handles common tasks
+            </summary>
+        </member>
+        <member name="P:MGS.SystemServices.Core.SystemSecurity.ServiceToken">
+            <summary>
+            Gets the Service Token
+            </summary>
+            <value>Raw JWT Service Token</value>
+            <remarks>JWT will still be base64 url encoded</remarks>
+        </member>
+        <member name="P:MGS.SystemServices.Core.SystemSecurity.HasToken">
+            <summary>
+            Gets whether there is a Service Token
+            </summary>
+        </member>
+        <member name="M:MGS.SystemServices.Core.SystemSecurity.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates instance of System Security integration
+            </summary>
+            <param name="systemSecurityUrl">The base url of the System Security API endpoint</param>
+            <param name="applicationName">The application name you wish to register you project as. This is free text and can be anything if you choose.</param>
+            <param name="systemSecurityApplicationName">The application name must belong in System Configuration as a preset.</param>
+            <param name="apiKeyRootPath">The root file path where the API Key cached .bin file will be created. Most commonly set to C:\MGS_Server\Keys</param>
+            <param name="apiKeyMaxRetryCount">The number of service tokens to make before bombing out. This is most commonly when no local cached API Key file could be found and the API Key is pending approval.</param>
+            <param name="apiKeyRetryDelaySeconds">The duration in seconds between retry to get a service token.</param>
+            <param name="serviceTokenImmediateRetryDelayMilliseconds">
+            If the service token is about to expire and for some reason it is unable to get a new one we consider the token as "under threat".
+            In this scenario we go into a tighter update loop trying to immediately get a new one
+            This value defines how long between retries when we get into this refresh failure and immediate retry scenario.
+            </param>
+        </member>
+        <member name="M:MGS.SystemServices.Core.SystemSecurity.GetTokenFromApiKey">
+            <summary>
+            If API Key exists in apiKeyRootPath then it will be read form the file.
+            If no key exists it will register the application with System Security and write the API Key to the apiKeyRootPath.
+            The API Key is then used to try get a Service Token.
+            </summary>
+            <returns>A Service Token</returns>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            There is a problem with System Security |
+            API Key is not present |
+            API Key is forbidden
+            </exception>
+            <exception cref="T:System.Security.SecurityException">
+            Service Token returned is null or empty
+            </exception>
+        </member>
+        <member name="M:MGS.SystemServices.Core.SystemSecurity.GetApiKey">
+            <summary>
+            If API Key exists in apiKeyRootPath then it will be read form the file.
+            If no key exists it will register the application with System Security and write the API Key to the apiKeyRootPath.
+            </summary>
+            <returns>A new or existing API Key</returns>
+            <remarks>API Key could still be pending</remarks>
+        </member>
+        <member name="M:MGS.SystemServices.Core.SystemSecurity.GetServiceToken(System.Guid)">
+            <summary>
+            API Key used to try get a Service Token.
+            </summary>
+            <returns>A Service Token</returns>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            There is a problem with System Security |
+            API Key is not present |
+            API Key is forbidden
+            </exception>
+            <exception cref="T:System.Security.SecurityException">
+            Service Token returned is null or empty
+            </exception>
+        </member>
+        <member name="M:MGS.SystemServices.Core.SystemSecurity.WaitAndRetryForTokenFromApiKey">
+            <summary>
+            If API Key exists in apiKeyRootPath then it will be read form the file.
+            If no key exists it will register the application with System Security and write the API Key to the apiKeyRootPath.
+            The API Key is then used to try get a Service Token.
+            It will retry apiKeyMaxRetryCount times waiting apiKeyRetryDelaySeconds between each try.
+            </summary>
+            <returns>A Service Token</returns>
+            <exception cref="T:System.Security.SecurityException">
+            Will throw security exceptions if there is a problem with System Security |
+            API Key is not present |
+            API Key is forbidden |
+            Maximum retries is exceeded
+            </exception>
+        </member>
+        <member name="M:MGS.SystemServices.Core.SystemSecurity.WaitAndRetryForToken(System.Guid,System.Int32)">
+            <summary>
+            API Key used to try get a Service Token.
+            It will retry apiKeyMaxRetryCount times waiting apiKeyRetryDelaySeconds between each try.
+            </summary>
+            <returns>A Service Token</returns>
+            <exception cref="T:System.Security.SecurityException">
+            Will throw security exceptions if there is a problem with System Security |
+            API Key is not present |
+            API Key is forbidden |
+            Maximum retries is exceeded
+            </exception>
+        </member>
+        <member name="M:MGS.SystemServices.Core.SystemSecurity.ScheduleTokenRefreshing(System.Threading.CancellationToken)">
+             <summary>
+             Creates an infinite process (while true) to handle token refreshing.
+             It will refresh the service token when it is >80% of the way to expiry.
+             The task is idle (Task.Delay) while token is still active.
+            
+             Will go into an "Token Under Threat" mode if token refreshing fails and retry after a short period.
+            
+             The intention is very much for this to be invoked by something HostingEnvironment.QueueBackgroundWorkItem or similar.
+             </summary>
+             <param name="cancellationToken"></param>
+             <returns></returns>
+        </member>
+        <member name="M:MGS.SystemServices.Core.SystemSecurity.#ctor(System.String,System.String,System.Guid,System.Int32)">
+            <summary>
+            Alternate constructor to be used when the APIKey is already known. This is to be used when IT manually 
+            register the application, and provide the API key to the given application.
+            </summary>
+        </member>
+        <member name="M:MGS.SystemServices.Core.SystemSecurity.InitializeServiceToken">
+            <summary>
+            Attempt to get a service token for the first time
+            </summary>
+        </member>
+        <member name="T:MGS.SystemServices.Core.SystemServicesCache">
+            <summary>
+            Implementation of the cache. Leverages <see cref="T:System.Runtime.Caching.MemoryCache"/>.
+            A new memory cache instance is created per application in order to partition each application's data.
+            </summary>
+        </member>
+        <member name="M:MGS.SystemServices.Core.SystemServicesCache.#ctor(System.String)">
+            <summary>
+            Non default contructor that requires the application name to create a memory cache instance per application.
+            </summary>
+            <param name="applicationName">Name the application, used as memory cache name</param>
+        </member>
+        <member name="T:MGS.SystemServices.Core.Utilities.DiagnosticsUtilities">
+            <summary>
+            Provides some helpful utility methods for dealing with the diagnostics. Example Metrics.
+            </summary>
+        </member>
+        <member name="M:MGS.SystemServices.Core.Utilities.DiagnosticsUtilities.Sanitise(System.String)">
+            <summary>
+            Makes sure string on contains 0-9, A-Z, a-z or _ - characters. 
+            All illegal characters are simply ommitted.
+            </summary>
+            <param name="name">Input string to be sanitised</param>
+            <returns>A string containing only the legal characters</returns>
+        </member>
+    </members>
+</doc>
